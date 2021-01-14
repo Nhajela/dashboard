@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHEONIX DASHBOARD</title>
+  
+
+    <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
+    <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
+    <!-- load font archia -->
+    <link
+      rel="preload"
+      href="/fonts/Archia/archia-semibold-webfont.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Archia/archia-medium-webfont.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Archia/archia-bold-webfont.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/> -->
+<!-- 
+    <link rel="stylesheet" href="speech-styles.css" /> -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="timer-container">
+      <div class="timer-box">
+        <div class="day-timer">
+          <div id="timer_day_text">HOUR 1</div>
+        </div>
+        <div class="pomo-timer">
+          <div id="timer_pomo_text"></div>
+        </div>
+
+        <div class="button-container">
+          <a class="btn startday">Start day</a>
+          <a class="btn startpomo">Pomodoro</a>
+          <a class="btn custompomo">Custom pomo</a>
+        </div>
+
+        <div class="button-container custom-wrapper">
+            
+            <small>Enter Time here:</small>
+            <input type="number" id="customTime" min="1" max="60">
+          <a class="btn" id="customPomobtn">Start</a>
+
+        </div>
+
+       
+      </div>
+      <a class="btn startlight">TURN LIGHTS ON</a>
+
+
+
+
+
+
+
+      <!-- speech recog -->
+      <!-- <div class="svg-wrapper inactive" id="a">
+        <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect class="shape" height="60" width="320" />
+        </svg>
+
+        <div class="text">NOT LISTENING</div>
+      </div>
+    </div> -->
+
+    <!-- Script -->
+
+    <script type="module" src="./script.js"></script>
+<!-- 
+    <script type="module" src="./speech.js"></script> -->
+  </body>
+</html>

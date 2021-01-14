@@ -1,0 +1,120 @@
+:root{
+  --border-size:0.125rem;
+  --background_dark:#161625;
+  --foreground_dark:#1E1E30;
+  --red_color:#F20738;
+  --blue-color:#026EE6;
+  --green-hover:#182828;
+  --green-color:#27A544;
+  --red-high-hover:#4D1129;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--background_dark);
+  font-family: 'archia';
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timer-container {
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.timer-box{
+  
+  background-color:var(--foreground_dark);
+    border-radius:5px;
+  -webkit-box-shadow: 3px 3px 153px -80px rgba(255,0,255,0.71);
+-moz-box-shadow: 3px 3px 153px -80px rgba(255,0,255,0.71);
+box-shadow: 3px 3px 153px -80px rgba(255,0,255,0.71);
+  display:grid;
+  grid-template-rows: 70% auto;
+  text-align: center;
+  padding: 10px;
+  
+  height: 45vh;
+
+}
+
+.day-timer{
+  align-self: center;
+  color:var(--red_color);
+  font-size:2rem;
+}
+.pomo-timer{
+  align-self: center;
+  font-size: 4.5rem;
+  color: var(--green-color);
+  display:none;
+}
+.button-container{
+  color:var(--blue-color);
+  box-sizing: border-box;
+  display:flex;
+  width: 100%;
+  flex-wrap: wrap;
+  
+
+}
+
+.btn{
+  cursor: pointer;
+  text-decoration: none;
+  display:inline-flex;
+  height: 100%;
+  align-self: center;
+  text-align: center;
+  padding: 5px;
+  align-items: center;
+  border-radius:2px;
+  color:var(--blue-color);
+
+  }
+
+  .lighton{
+    background-color: var(--green-hover);
+    color:var(--green-color);
+  }
+
+  .button-container a + a {
+    
+    margin-left: calc(var(--border-size) * -1);
+  }
+  
+.custom-wrapper{
+  display:none;
+  margin-top:10px;
+  padding:5px;
+  justify-content:space-around;
+  align-items:center;
+}
+
+input {
+  background-color :var(--red-high-hover);
+  border-style:hidden;
+  outline:none;
+  color:#fff;
+}
+
+
+.startlight{
+  margin-top: 1rem;
+  text-align: center;
+height: 4rem;
+}
+/* TODO: IMPLEMENT BETTER SPINNER BUTTONS. */
+
